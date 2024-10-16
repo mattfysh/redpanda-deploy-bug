@@ -1,0 +1,25 @@
+statefulset:
+  replicas: 1
+tls:
+  enabled: false
+listeners:
+  kafka:
+    external:
+      default:
+        advertisedPorts:
+        - 31093
+  admin:
+    enabled: false
+    external:
+      default:
+        enabled: false
+  schemaRegistry:
+    enabled: false
+    external:
+      default:
+        enabled: false
+  http:
+    enabled: false
+    external:
+      default:
+        enabled: false
